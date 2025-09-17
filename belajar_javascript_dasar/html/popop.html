@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup box</title>
+</head>
+<body>
+
+    <script>
+        // Tampilkan alert pertama
+        alert('Ini adalah alert sederhana!');
+
+        // Tampilkan konfirmasi
+        if (confirm('Apakah Anda ingin melanjutkan?')) {
+            // Jika user memilih OK, tampilkan prompt
+            const nama = prompt('Masukkan nama Anda:');
+            if (nama) {
+                alert('Halo, ' + nama + '!');
+            } else {
+                alert('Anda tidak memasukkan nama.');
+            }
+        } else {
+            alert('Anda membatalkan proses.');
+        }
+
+        // let angka = prompt('Masukkan angka:');
+        // alert('Angka yang Anda masukkan adalah: ' + angka);
+    </script>
+</body>
+</html>
